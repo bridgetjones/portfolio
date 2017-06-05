@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top primary-color">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button class="navbar-toggle collasped" data-toggle="collapse" type="button" aria-expanded="false" data-target="#example">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Bridget Jones</a>
+        </div>
+        <div class="navbar-collapse collapse" id="example">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="container">
+        <div class="home-details">
+          <h1 class="base-white">Bridget Jones</h1>
+          <h3 class="slogan base-white">Where Awesomeness is Brought to Life</h3>
+          <hr>
+          <div class="row">
+            <div class="col-xs-12 col-md-3">
+              <a class="btn btn-primary btn-lg" href="https://twitter.com/arthistorytech1" target="_blank"><i class="fa fa-twitter"></i>Twitter</a>
+            </div>
+            <div class="col-xs-12 col-md-3">
+              <a class="btn btn-primary btn-lg" href="https://github.com/bridgetjones" target="_blank"><i class="fa fa-github-alt"></i>Github</a>
+            </div>
+            <div class="col-xs-12 col-md-3">
+              <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/bridget-jones-a267021a/" target="_blank"><i class="fa fa-linkedin"></i>Linkedin</a>
+            </div>
+          </div>
+          <!--row socialmedia-->
+        </div>
+      </div>
+      <!--container-->
+    </section>
+    <section id="about">
+      <div class="container base-white">
+        <div class="row">
+          <div class="col-md-6 col-xs-12">
+            <p>I'm a web developer.</p>
+            <p>My passion is to use technology based solutions, to help solve real world challenges.</p>
+            <h4 class="base-white">Skills:</h4>
+            <ul>
+              <li>Javascript</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>jQuery</li>
+              <li>Bootstrap3</li>
+            </ul>
+            <h4 class="base-white">Tools:</h4>
+            <ul>
+              <li>Git</li>
+              <li>Responsive Web Design</li>
+              <li>Agile Methodologies</li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-xs-6">
+            <img class="img-circle img-responsive" src="http://placehold.it/200x200" alt="Placeholder" />
+            <!-- add picture -->
+          </div>
+        </div>
+      </div>
+      <!-- container -->
+    </section>
+    <section id="portfolio">
+      <div class="container">
+        <h2>Awesomesauce Portfolio</h2>
+        <h4>Below you'll find my recent work</h4>
+        <div class="row">
+          <div class="col-xs-12 col-lg-4">
+            <div class="card-image">
+              <img class="img-rounded" src="http://placehold.it/150x150" alt="Placeholder" />
+            </div>
+            <div class="card-title-container">
+              <span class="card-title">Some Project</span>
+              <span class="card-description">Techs Used</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-lg-4">
+            <div class="card-image">
+              <img class="img-rounded" src="http://placehold.it/150x150" alt="Placeholder" />
+            </div>
+            <div class="card-title-container">
+              <span class="card-title">Some Project</span>
+              <span class="card-description">Techs Used</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-lg-4">
+            <div class="card-image"><img class="img-rounded" src="http://placehold.it/150x150" alt="Placeholder" />
+            </div>
+            <div class="card-title-container">
+              <span class="card-title">Some Project</span>
+              <span class="card-description">Techs Used</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- row -->
+        <div class="row">
+          <div class="col-xs-12 col-lg-4">
+            <div class="card-image">
+              <img class="img-rounded" src="http://placehold.it/150x150" alt="Placeholder" />
+            </div>
+            <div class="card-title-container">
+              <span class="card-title">Some Project</span>
+              <span class="card-description">Techs Used</span>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-lg-4">
+            <div class="card-image">
+              <img class="img-rounded" src="http://placehold.it/150x150" alt="Placeholder" />
+            </div>
+            <div class="card-title-container">
+              <span class="card-title">Some Project</span>
+              <span class="card-description">Techs Used</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-lg-4">
+            <div class="card-image">
+              <%#= video_tag "WynEats Video.mov", :size => "320x240", :controls => true %>
+              <img class="img-rounded" src="http://placehold.it/150x150" alt="Placeholder" />
+            </div>
+            <div class="card-title-container">
+              <span class="card-title">Some Project</span>
+              <span class="card-description">Techs Used</span>
+            </div>
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+    <section id="contact">
+      <div class="container base-white">
+        <div class="row">
+          <div class="col-md-10 col-xs-12">
+            <h2 class="base-white">Contact Me:</h2>
+            <h4 class="base-white">Email: arthistorytechy@gmail.com</h4>
+          </div>
+          <div class="col-md-2 col-xs-12">
+            <div class="social-media">
+              <a class="btn btn-primary btn-lg" href="https://twitter.com/arthistorytech1" target="_blank"><i class="fa fa-twitter"></i>Twitter</a>
+            </div>
+            <div class="social-media">
+              <a class="btn btn-primary btn-lg" href="https://github.com/bridgetjones" target="_blank"><i class="fa fa-github-alt"></i>Github</a>
+            </div>
+            <div class="social-media">
+              <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/bridget-jones-a267021a/" target="_blank"><i class="fa fa-linkedin"></i>Linkedin</a>
+            </div>
+          </div>
+          <!--row -->
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-top-section">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li> - </li>
+            <li><a href="#about">About</a></li>
+            <li> - </li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li> - </li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom-section">
+          Copyright &copy; 2017 All Rights Reserved
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
